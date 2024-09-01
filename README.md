@@ -33,14 +33,7 @@ The Car Rental Services Backend is a robust API-driven platform designed to mana
    ```bash
    npm install
    ```
-3. **Environment Configuration**:
-   - Create a `.env` file in the root directory with the following variables:
-     ```env
-     PORT=3000
-     MONGO_URI=your_mongodb_uri
-     JWT_SECRET=your_jwt_secret
-     ```
-4. **Start the Server**:
+3. **Start the Server**:
    ```bash
    npm start
    ```
@@ -71,5 +64,3 @@ The Car Rental Services Backend is a robust API-driven platform designed to mana
 
 ## License
 This project is licensed under the MIT License.
-
-
