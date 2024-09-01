@@ -8,7 +8,7 @@ The Car Rental Services Backend is a robust API-driven platform designed to mana
 - **Vehicle Management**: CRUD operations for vehicles, including availability tracking.
 - **Booking System**: Efficient booking process with conflict management.
 - **Admin Dashboard**: Comprehensive admin controls for managing cars, users, and bookings.
-- **Payment Integration**: (Optional) Integration with payment gateways for booking transactions.
+- **Payment Integration**: Integration with payment gateways for booking transactions.
 
 ## Technologies
 - **Backend**: Node.js, Express.js
