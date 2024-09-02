@@ -3,7 +3,6 @@ const router = express.Router();
 
 const { mybooking, createBooking,bookingDetails, updateBooking, cancelBooking } = require("../controllers/bookingController");
 
-const requireAuth = require('../middleware/requireAuth')
 
 router.post("/booking", requireAuth, createBooking);
 router.get('/mybooking',requireAuth, mybooking)
