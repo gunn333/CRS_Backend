@@ -6,10 +6,8 @@ const mongoose = require("mongoose");
 const cors = require('cors')
 
 //routes
-const userRoutes = require("./routes/user");
 const carRoutes = require("./routes/cars");
 const bookingRoutes = require("./routes/booking")
-const reviewRoutes = require('./routes/review')
 
 // express app
 const app = express();
@@ -29,10 +27,8 @@ app.use(morgan("dev"));
 app.use(cors())
 
 // routes
-app.use("/api/user", userRoutes);
 app.use("/api/car", carRoutes);
 app.use("/api/book", bookingRoutes )
-app.use("/api/review",reviewRoutes)
 
 // connect to db
 mongoose

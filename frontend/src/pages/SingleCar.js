@@ -3,7 +3,6 @@ import useFetch from "../hooks/useFetch";
 import "./css/singleCar.css";
 import Loading from "../components/Loading";
 import WarningAlert from "../components/WarningAlert";
-import ReviewCard from "../components/ReviewCard";
 
 const SingleCar = () => {
   const { id } = useParams();
@@ -74,12 +73,7 @@ const SingleCar = () => {
 
         </div>
       )}
-
-      
-      
-      <ReviewCard carId={id} />
-
-      
+  
     </div>
   );
 };

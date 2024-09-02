@@ -3,15 +3,9 @@ import { useAuthContext } from "./hooks/useAuthContext";
 
 // pages & components
 import Navbar from "./components/Navbar";
-import ScrollToTopButton from "./components/ScrollToTopButton";
 import Home from "./pages/Home";
-import Login from "./pages/Login";
-import Signup from "./pages/Signup";
-import Profile from "./pages/Profile";
 import SingleCar from "./pages/SingleCar";
 import BookCar from "./pages/BookCar";
-import MyBookings from "./pages/MyBookings";
-import BookingInfo from "./pages/BookingInfo";
 
 
 function App() {
@@ -27,18 +21,6 @@ function App() {
               path="/"
               element={user ? <Home /> : <Navigate to="/login" />}
             />
-            <Route
-              path="/login"
-              element={!user ? <Login /> : <Navigate to="/" />}
-            />
-            <Route
-              path="/signup"
-              element={!user ? <Signup /> : <Navigate to="/" />}
-            />
-            <Route
-              path="/profile"
-              element={user ? <Profile /> : <Navigate to="/login" />}
-            />
 
             <Route
               path="/singleCar/:id"
@@ -49,19 +31,10 @@ function App() {
               path="/booking/:carid"
               element={user ? <BookCar /> : <Navigate to="/login" />}
             />
-            <Route
-              path="/mybooking"
-              element={user ? <MyBookings /> : <Navigate to="/login" />}
-            />
-            <Route
-              path="/mybooking/:id"
-              element={user ? <BookingInfo /> : <Navigate to="/login" />}
-            />
           </Routes>
         </div>
       </BrowserRouter>
 
-      <ScrollToTopButton />
     </div>
   );
 }
